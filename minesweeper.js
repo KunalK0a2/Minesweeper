@@ -1,7 +1,7 @@
 const boardSize = 10;
     const mineCount = 15;
     let board, cells, mines;
-    const audio = new Audio('bomb.wav');
+    //const audio = new Audio('bomb.wav');
     const initializeGame = () => {
 
       // Resets the board
@@ -86,7 +86,7 @@ const boardSize = 10;
       if (cell.dataset.mine) {
         cell.classList.add('mine');
         cell.textContent = '💣';
-        audio.play();
+        //audio.play();
         alert('Game Over!');
         return;
       }
